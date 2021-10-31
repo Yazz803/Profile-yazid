@@ -15,22 +15,11 @@ body {
     height: auto;
     border-radius: 20px;
 }
-#pp img {
-    width: 20%;
-    height: auto;
-    border-radius: 50%;
-    border: 2px solid gray;
-}
-.foto-profile {
-    bottom: 200px;
-    right: 180px;
-    position: absolute;
-}
 .deskripsi {
     background-color: white;
     border: 2px solid gray;
-    padding: 60px 0 50px 0;
     border-radius: 20px;
+    padding-bottom: 50px;
 }
 .kontak {
     background-color: white;
@@ -72,7 +61,10 @@ h3 {
 .sms a {
     color: white;
 }
-@media (max-width: 400px){
+.copyright {
+    text-align: center;
+}
+@media (max-width: 1000px){
     .utama {
         margin: 0;
     }
