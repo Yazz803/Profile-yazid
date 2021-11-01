@@ -38,7 +38,6 @@ body::before {
 } */
 img#pp {
     width: 25%;
-    height: auto;
     border-radius: 50%;
     bottom: 100px;
     position: relative;
@@ -98,19 +97,20 @@ h3 {
     .utama {
         margin: 20px 2px 2px 2px;
         padding-top: 150px;
-        padding-bottom: 250px;
+        padding-bottom: 210px;
     }
     #bg img {
         border-radius: 0;
         border: 2px solid gray;
     }
     img#pp {
-        max-width: 40%;
+        max-width: 100%;
         border-radius: 50%;
         top: -20px;
     }   
     .deskripsi {
         margin-top: -70px;
+        padding: 35px 0 5px 0;
     }
     .deskripsi h2 {
         font-size: 20px;
