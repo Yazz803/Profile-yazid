@@ -73,7 +73,9 @@ img#pp {
     margin: 10px 0 10px 0;
     padding: 10px 100px 10px 10px;
     background-color: white;
-    text-algin: justify;
+}
+.konten2 p {
+    text-align: justify;
 }
 legend {
     font-size: 30px;
