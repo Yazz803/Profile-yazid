@@ -101,7 +101,7 @@ h3 {
     display: flex;
 }
 .sertifikat img {
-    width: 50%;
+    width: 100%;
 }
 .sms {
     background-color: rgba(0, 0, 0, 0.8);
@@ -190,12 +190,10 @@ h3 {
     .sertifikat {
         margin: 10px 10px 10px 10px;
         background-color: rgba(133, 133, 133, 0.5);
+        letter-spacing: 10px;
     }
     .sertifikat img {
         width: 100%;
-    }
-    .sertifikat2 img:last-child {
-        display: none;
     }
     .sertifikat2 {
         display: grid;
@@ -284,14 +282,11 @@ h3 {
         background-color: rgba(133, 133, 133, 0.5);
     }
     .sertifikat img {
-        width: 50%;
-    }
-    /* .sertifikat2 img:last-child {
-        display: none;
+        width: 100%;
     }
     .sertifikat2 {
-        display: grid;
-    } */
+        display: flex;
+    }
     .sms {
         font-size: 15px;
     }
