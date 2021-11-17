@@ -345,6 +345,9 @@ h3 {
         font-size: 15px;
         margin-top: -5%;
     }
+    .sms a:hover {
+        font-size: 17px;
+    }
     .kontak {
         letter-spacing: 50px;
     }
