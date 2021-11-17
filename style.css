@@ -9,22 +9,54 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: darkblue;
-  background-image: 
-    url(bg2.jpg);
+  background: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    115deg,
+    rgba(214, 214, 214, 0.3),
+    rgba(199, 199, 199, 0.3)
+  ),
+    url(img/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.747);
+    z-index: 999;
+}
+.topbar ul li {
+    display: inline-block;
+    margin-top: 15px;
+    padding-right: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.topbar a {
+    text-decoration: 0;
+    color: white;
+    transition: .3s;
+}
+.topbar a:hover {
+    font-size: 17px;
+    transition: .3s;
+}
 .utama {
     background-color: white;
-    margin: 5% 25% 0 25%;
-    border-radius: 20px;
+    margin: 5% 15% 0 15%;
+    border-radius: 20px 20px 0 0;
     text-align: center;
-    padding: 200px 0 10px 0;
-    background-image: url(bg4.jpeg);
+    padding: 250px 0 10px 0;
+    background-image: url(img/bg3.jpg);
     background-repeat: no-repeat;
-    height: 200px;
+    background-position: 0 -150px;
+    background-size: cover;
+    height: 380px;
 }
 /* #bg img {
     width: 100%;
@@ -35,16 +67,15 @@ body::before {
 img#pp {
     width: 25%;
     border-radius: 50%;
-    bottom: 100px;
+    bottom: 50px;
     position: relative;
 }
 .deskripsi {
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(133, 133, 133, 0.5);
+    /* border: 2px solid rgba(133, 133, 133, 0.5); */
     padding-bottom: 0px;
-    margin-top: -180px;
+    margin-top: -120px;
     padding-top: 60px;
-    border-radius: 0 0 20px 20px;
     /* border-radius: 10px; */
 }
 .kontak {
@@ -57,6 +88,18 @@ img#pp {
 }
 .kontak a {
     fill: currentColor;
+    width: 40px;
+    height: 40px;
+}
+svg {
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+}
+svg:hover {
+    width: 50px;
+    height: 50px;
+    transition: .3s;
 }
 .biodata {
     display: flex;
@@ -105,12 +148,19 @@ h3 {
 }
 .sms {
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     padding: 10px 10px 10px 10px;
     font-size: 20px;
+    margin-top: -3.3%;
 }
 .sms a {
     color: white;
+    transition: .10s;
+    text-decoration: none;
+}
+.sms a:hover {
+    font-size: 25px;
+    transition: .10s;
 }
 .copyright {
     text-align: center;
@@ -123,13 +173,13 @@ h3 {
       rgba(102, 102, 102, 0.8),
       rgba(100, 100, 100, 0.7)
     ),
-    url(bg2.jpg);
+    url(img/bg2.jpg);
     }
     .utama {
         margin: 20px 10px 2px 10px;
         padding-top: 150px;
         padding-bottom: 180px;
-        background-image: url(bg2.jpg);
+        background-image: url(img/bg2.jpg);
     }
     #bg img {
         border-radius: 0;
@@ -190,6 +240,7 @@ h3 {
     .sertifikat {
         margin: 10px 10px 10px 10px;
         background-color: rgba(133, 133, 133, 0.5);
+        letter-spacing: 10px;
     }
     .sertifikat img {
         width: 100%;
@@ -212,13 +263,17 @@ h3 {
       rgba(102, 102, 102, 0.8),
       rgba(100, 100, 100, 0.7)
     ),
-    url(bg2.jpg);
+    url(img/bg2.jpg);
     }
     .utama {
-        margin: 20px 10px 2px 10px;
+        margin: 70px 10px 2px 10px;
         padding-top: 150px;
         padding-bottom: 180px;
-        background-image: url(bg2.jpg);
+        background-image: url(img/bg3.jpg);
+        background-position: -150px -120px;
+    }
+    .topbar ul li {
+        padding-right: 20px;
     }
     #bg img {
         border-radius: 0;
@@ -288,6 +343,7 @@ h3 {
     }
     .sms {
         font-size: 15px;
+        margin-top: -5%;
     }
     .kontak {
         letter-spacing: 50px;
