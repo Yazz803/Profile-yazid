@@ -360,5 +360,6 @@ h3 {
     .copyright {
         color: white;
         text-shadow: 0 0 10px black;
+        margin-top: 50px;
     }
 }
